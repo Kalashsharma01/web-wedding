@@ -12,3 +12,12 @@ def aboutpage(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def wedding(request):
+    return render(request, 'wedding_cinema.html')
+
+
+
+def portfolio(request):
+    return render(request, 'portfolio.html')
