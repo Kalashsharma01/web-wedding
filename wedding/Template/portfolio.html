@@ -13,6 +13,25 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .marquee {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        background-color: black;
+    }
+
+    .marquee span {
+        display: inline-block;
+        font-size: 12em;
+        color: rgb(218, 218, 218);
+        animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
     </style>
 </head>
 <body>
@@ -20,9 +39,44 @@
     <div style="margin: 0; padding: 0;">
 
         <div class="portfolio-header">
-            <h1 style="font-size: 5em; color: white; font-weight: bold; text-align: center; padding-top: 3em; margin: 0;">WEDDING CINEMA</h1>
+            <h1 style="font-size: 5em; color: white; font-weight: bold; text-align: center; padding-top: 3em; margin: 0; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">WEDDING CINEMA</h1>
+        </div>
+
+
+        <div style="position: relative;">
+            <marquee direction="left" style="font-size: 12em; color: rgb(235, 235, 235); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >PORTFOLIO</marquee>
+
+            <div style="position: absolute; display: flex; top: 7.5em; margin: 0em 6em;">
+                <div style="width: 18em; padding-right: 4em; font-weight: 500;">
+                    <p style="font-size: 20px; color: rgb(118, 118, 118); line-height: 1.3em;">
+                        Weddings provide a perfect platform for experiencing a gamut of emotions, unseen in any other event anywhere. Good wedding photography captures the essence of these timeless emotions in their most untouched form.
+                    </p>
+                    <p style="font-size: 18px; color: rgb(118, 118, 118); line-height: 1.3em;">
+                        Explore the showcase of some of the many weddings we have been so fortunate to be a part of and get a first-hand experience of our style and creativity.
+                    </p>
+
+                    <h2>Filters</h2>
+
+
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        <div>
+                            <img src="https://www.candidshutters.com/maintenance/wp-content/uploads/2024/06/Best-wedding-photographers-India-Top-5-destination-wedding-photographers-Indian-weddings-2-2048x1366.jpg" alt="" height="310em" width="500em">
+                        </div>
+                        <div>
+                            <p style="background-color: rgb(241, 240, 240); padding: 2em 2em; margin: -1em 1em; font-size: 1.2em; width: 20em; text-align: center; text-transform: uppercase; color: rgb(85, 85, 85);">
+                                best wedding photographers india-lonavala wedding
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
     
 </body>
 </html>
