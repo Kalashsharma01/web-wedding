@@ -5,70 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">    
 </head>
 <body>
 
     {% include 'navbar.html' %}
     
 
+    {% block content %}
+    {% endblock %}
+
 
     <footer>
-        <div style="height: 400px; width: 1420px; margin-top: 100px; background-color :rgb(255, 154, 161);">
-            <table style="justify-content: space-between;">
-                <tr class="bg-pink ">
-                    <th class=" text-3xl ">Quick Links</th>
-                    <br>
-                    <th></th>
-                    <br>
-                    <th>Sign up For Discounts</th>
-                    <br>
-                    <th>Contact Us</th>
-               
+        <div class="flex h-400px w-1420 bg-pink-200 justify-between p-10">
+           <div >
+            <table class="underline">
+                <tr class="p-10 text-3xl none">
+                    <td>Quick Links</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+             <tr>
+
+                <td>Order Assistance</td>
+                <td>Your Proofs</td>
+             </tr>
+             <tr>
+                <td>Your Saved Products</td>
+                <td>Paper Quality</td>
+             </tr>
+             <tr>
+                <td>Order a Custom Sample</td>
+                <td>Free Address Collection</td>
+             </tr>
+             <tr>
+                <td>Peel & Seal Envelopes</td>
+                <td>Our Love It Guarantee</td>
+             </tr>
+             <tr>
+                <td>Advance Search</td>
+                <td>Shipping policy</td>
+             </tr> 
+             <tr>
+                <td>Return Policy</td>
+                <td>Contact Us</td>
+             </tr>
+             <tr>
+                <td>Free Printables</td>
+                <td>Inspired Gallary</td>
+             </tr>
+             <tr>
+                <td>Shop By Theme</td>
+                <td>Basic Invite Blog</td>
+             </tr>
+             <tr>
+                <td>Wedding Etiquette</td>
+                <td>Wording Examples</td>
+             </tr>
+             <tr>
+                <td>Employment</td>
+                <td>Partner Program</td>
+             </tr>
+             <tr>
+                <td>Privacy Policy</td>
+                <td>Site Map</td>
+             </tr>
+             <tr>
+                <td>Accessibilty</td>
+                
+             </tr>
+           
+           
+
             </table>
+           </div>
+            <br>
+           <div>
+            <p class="text-3xl">Sign up for discounts</p>
+            <br>
+        <p class="p-2">Join our mailing list to get notified of sales and discounts</p>
+           <input class="p-2" type="email" placeholder="Enter your email">
+           <br>
+           <br>
+           <a class="text-2xl underline" href="#">Sign in</a>
+           </div>
+
+           <div >
+           <h1 class="text-3xl">Contact Us</h1>
+           <br>
+           <p class="p-2">Looking for help with an existing order?</p>
+           <p class="underline p-3">click here for order assistance</p>
+
+           <p class="p-3">Chat with us live</p>
+           <p class="p-3">Email us</p>
+           <p class="p-3">80766653230</p>
+           <p class="p-2">Monday to Friday, 9 AM to 5 PM MST</p>
+           </div>
         </div> 
     </footer>
     
