@@ -1,92 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+{% extends 'index.html' %}
 
-    <style>
-        .img{
-            background-image: url('https://www.theknot.com/tk-media/images/0bab4eba-48b0-4318-8c7d-43cb34b941fc~rs_3840.h');
-            margin: 0px;
-            padding: 0px;
-            height: 65em;
-            width: 100%;
-            background-size: cover;
-        }
+{% block content %}
 
-        .client_review_box{
-            padding-top: 260px;
-            padding-left: 450px;
-            width: 650px;
-            text-align: center;
-            font-family: sans-serif;
-        }
+<link rel="stylesheet" href="/static/css/home.css"> 
 
-        .heading-1{
-            color: white;
-            font-size: 48px;
-        }
-
-        .heading-2{
-            color: white;
-            font-size: 20px;
-            font-weight: 100;
-            padding-top: -10px;
-        }
-
-        .box-3{
-            filter: drop-shadow(0 20px 25px rgba(0,0,0,.1)) drop-shadow(0 8px 10px rgba(0,0,0,.1));
-        }
-
-        /* .review-boxes{
-            overflow: hidden;
-        } */
-
-        .review-slide.active{
-            opacity: 1;
-        }
-
-        .review-slide a:hover{
-            text-decoration: underline;
-        }
-
-        .button{
-            position: absolute;
-            top: 50%;
-            font-size: 18px;
-            padding: 10px;
-            cursor: pointer;
-            border: none;
-            background-color: rgba(255,255,255,0.7);
-            transform: translateY(-50%);
-        }
-
-        .prev{
-            left: 10px;
-            margin-top: 8em;
-            padding: 1.5em;
-            border-radius: 50%;
-            height: 4em;
-            width: 5em;
-            border: none;
-        }
-
-        .next{
-            margin-left: 490px;
-            margin-top: 8em;
-            padding: 1.5em;
-            border-radius: 50%;
-            height: 4em;
-            width: 5em;
-            border: none;
-        }
-
-    </style>
-
-</head>
-
-<body>
     
 
 
@@ -150,45 +67,6 @@
     </div>
 
 
+<script src="/static/js/home.js"></script>
 
-    <script>
-
-        let slideIndex = 1;
-            showslide(slideIndex);
-
-            function changeSlide(n){
-                showslide(slideIndex += n);
-            }
-
-            function currentSlide(n){
-                slideIndex = n;
-                showslide(slideIndex);
-            }   
-
-            function showslide(n){
-                let i;
-                let slides = document.getElementsByClassName("review-slide");
-
-                if(n > slides.length){
-                    slideIndex = 1;
-                }
-                
-                if(n < 1){
-                    slideIndex = slides.length;
-                }
-
-                for(i = 0; i < slides.length; i++){
-                    slides[i].style.display = "none";
-                }
-
-                slides[slideIndex-1].style.display = "block"
-            }
-
-            console.log("Hello");
-        
-
-        
-    </script>
-
-</body>
-</html>
+{% endblock %}
