@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/home.css"> 
+
+    
+
+
+    <!-- % client-review %  -->
+
+
+    <div class="">
+
+        <div class="">
+
+            <div class="img">
+                <div class="client_review_box">
+                    <h2 class="heading-1">Offer guests a home for all their questions</h2>
+                    <h3 class="heading-2">Directions to the reception? Dress code? Create a free website that makes everything makes sense for everyone.</h3>
+
+                    <div style="display: flex;">
+
+                        <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+
+                        <div class="review-boxes" style="position: relative; margin-left: 5.5em; margin-top: 2.5em;">
+                            
+                            <div style="color: black; background-color: white; width: 25em; height: 16em; border-radius: 0.8em; rotate: 4deg; position: absolute; top: 0;"></div>
+                            <div style="color: black; background-color: white; width: 25em; height: 16em; border-radius: 0.8em; rotate: -8deg; position: absolute; top: 0;"></div>
+                            
+                            <div class="box-3" style="color: black; background-color: white; width: 25em; height: 16em; border-radius: 0.8em; rotate: 0deg; position: absolute; top: 0; overflow: hidden; scroll-behavior: smooth;">
+
+                                <div class="slider" style=" display: flex; ">
+
+                                <div class="review-slide active" style="margin-bottom: 2em;">
+                                    <h3 style=" padding-top: 13px; font-size: 1.5rem; font-weight: 600; letter-spacing: 0; line-height: 1.1666666667; width: 16.5em;" class="slider_head">Share event details</h3>
+                                    <h3 style="padding: 0px 40px; font-size: 19px; font-weight: 100; letter-spacing: 0; line-height: 1.4444444444;">Start with the when and where, then set up RSVPs and add registry gifts for guests to shop.</h3>
+                                    <a href="#" style="color: #0073e6; text-decoration: none; ">Start your website</a>
+                                </div>
+
+                                <div class="review-slide">
+                                    <h3 style=" padding-top: 13px; font-size: 1.5rem; font-weight: 600; letter-spacing: 0; line-height: 1.1666666667; width: 16.5em;">Tell you love story</h3>
+                                    <h3 style="padding: 0px 40px; font-size: 19px; font-weight: 100; letter-spacing: 0; line-height: 1.4444444444;">Share engagement photos and set the tone for your wedding with the story of how you met.</h3>
+                                    <a href="#" style="color: #0073e6; text-decoration: none; ">Start your website</a>
+                                </div>
+
+                                <div class="review-slide">
+                                    <h3 style=" padding-top: 13px; font-size: 1.5rem; font-weight: 600; letter-spacing: 0; line-height: 1.1666666667; width: 16.5em;">Send quick reminders</h3>
+                                    <h3 style="padding: 0px 40px; font-size: 19px; font-weight: 100; letter-spacing: 0; line-height: 1.4444444444;">Get guests to RSVP with helpful message templates that link to your website's RSVP page.</h3>
+                                    <a href="#" style="color: #0073e6; text-decoration: none; ">Start your website</a>
+                                </div>
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <button class="next" onclick="changeSlide(1)">&#10095</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<script src="/static/js/home.js"></script>
+
+{% endblock %}
