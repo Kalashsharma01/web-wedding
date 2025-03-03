@@ -1,14 +1,31 @@
+
+
+
+
+.home-header{
+    background-image: url('https://www.candidshutters.com/maintenance/wp-content/uploads/2022/10/wedding-pictures-in-india-pre-wedding-photography-gulmarg-kashmir.jpg');
+    height: 47em;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10em;
+}
+
+
+
+
 .img{
     background-image: url('https://www.theknot.com/tk-media/images/0bab4eba-48b0-4318-8c7d-43cb34b941fc~rs_3840.h');
     margin: 0px;
     padding: 0px;
-    height: 65em;
+    height: 45em;
     width: 100%;
     background-size: cover;
 }
 
 .client_review_box{
-    padding-top: 260px;
+    padding-top: 15em;
     padding-left: 450px;
     width: 650px;
     text-align: center;
@@ -18,13 +35,8 @@
 .heading-1{
     color: white;
     font-size: 48px;
-}
-
-.heading-2{
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    padding-top: -10px;
+    width: 13em;
+    font-weight: 900;
 }
 
 .box-3{
@@ -57,19 +69,58 @@
 .prev{
     left: 10px;
     margin-top: 8em;
-    padding: 1.5em;
+    padding: 1.2em 1.5em;
     border-radius: 50%;
-    height: 4em;
+    height: 3.5em;
     width: 5em;
     border: none;
+    background-color: white;
 }
 
 .next{
     margin-left: 490px;
     margin-top: 8em;
     padding: 1.5em;
-    border-radius: 50%;
+    padding: 1.2em 1.5em;
     height: 4em;
     width: 5em;
     border: none;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+
+
+.home_body{
+    width: 94.95em;
+    overflow: hidden;
+}
+
+.home_heading{
+    font-size: 12em;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    animation: move 10s ease-out forwards;
+    width: 94.5em;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(10vw); 
+    }
+}
+
+
+
+
+.slider_bgimage{
+    background-image: url('/static/image/bgimage_nude.png');
+    height: 40em;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
