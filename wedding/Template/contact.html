@@ -1,170 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wedding-website</title>
-</head>
+{% extends 'index.html' %}
 
-<body style="background-color:  #f8f5f1;">
+
+{% block content %}
+
+
+<div style="background-color:  #f8f5f1;">
     
-<div style="display: flex; "> 
-    <div style="height: 500px; width:600px; background-color:#9b6a50; margin: 10%;">      MAP!!!!</div>
-    <div style="margin-top: 8%; font-size: large;">
-        <p style="color: #9b6a50; font-size: 3em;">Our Location</p>
-        <h3>locations
-            We are based in Delhi in India.</h3>
-
-            <p>DELHI</p>
-            <p>3rd floor, Duru House, Juhu Tara Rd, next to Jw Marriott,
-                <br> Nazir Wadi,
-               Theosophical Housing Colony,
-                 <br>
-                  delhi 400049</p>
-            <p style="margin-top: 10%; font-size: 1.50em">Phone: 807665323</p>
-           <p style="margin-top: 5%; font-size:1.50em">Email: contact@theweddingtree.com</p> 
+    <div style="display: flex; "> 
+        <div style="height: 500px; width:600px; background-color:#9b6a50; margin: 10%;">      MAP!!!!</div>
+        <div style="margin-top: 8%; font-size: large;">
+            <p style="color: #9b6a50; font-size: 3em;">Our Location</p>
+            <h3>locations
+                We are based in Delhi in India.</h3>
+    
+                <p>DELHI</p>
+                <p>3rd floor, Duru House, Juhu Tara Rd, next to Jw Marriott,
+                    <br> Nazir Wadi,
+                   Theosophical Housing Colony,
+                     <br>
+                      delhi 400049</p>
+                <p style="margin-top: 10%; font-size: 1.50em">Phone: 807665323</p>
+               <p style="margin-top: 5%; font-size:1.50em">Email: contact@theweddingtree.com</p> 
+        </div>
     </div>
-</div>
-
-<!-- contact us -->
-
-<div style="height: 1000px; width: 1390px;  background-color: #f3e5d8; display: flex; color: #9b6a50;">
-
-<div style="width: 800px; height: 400px;  padding: 5%;">
-    <h1>Contact us
-        Fill the form or pickup a phone and call!</h1>
-
-        <p style="font-size: 1.70em;">Have more queries? Have something to tell us? No matter what the reason is, fill the form or pick up the phone and call us. We would love to address your queries and collaborate with you for your big day in making it worth cherishing for years and generations to come.</p>
-</div>
-
-<div style="padding: 7% 5%; background-color: #9b6a50;">
     
-   
-    <form  style="font-size: 1.30em; color:  #f3e5d8;">
+    <!-- contact us -->
+    
+    <div style="height: 1000px; width: 1390px;  background-color: #f3e5d8; display: flex; color: #9b6a50;">
+    
+    <div style="width: 800px; height: 400px;  padding: 5%;">
+        <h1>Contact us
+            Fill the form or pickup a phone and call!</h1>
+    
+            <p style="font-size: 1.70em;">Have more queries? Have something to tell us? No matter what the reason is, fill the form or pick up the phone and call us. We would love to address your queries and collaborate with you for your big day in making it worth cherishing for years and generations to come.</p>
+    </div>
+    
+    <div style="padding: 7% 5%; background-color: #9b6a50;">
         
        
-
-            <label for="Name">Name: </label>
+        <form  style="font-size: 1.30em; color:  #f3e5d8;">
             
-            <input style=" width: 480px; height: 30px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="text" placeholder="Enter your name here">
-
-            <br>
-            <br>
-            <div style="display: flex;">
-            <label  for="email">Email:</label>
-            <br>
-            <input style=" width: 280px; height: 30px; padding: 0% 1%; margin: 0em 1em; font-size: 0.7em" type="email" placeholder="Enter your email here">
+           
+    
+                <label for="Name">Name: </label>
+                
+                <input style=" width: 480px; height: 30px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="text" placeholder="Enter your name here">
+    
+                <br>
+                <br>
+                <div style="display: flex;">
+                <label  for="email">Email:</label>
+                <br>
+                <input style=" width: 280px; height: 30px; padding: 0% 1%; margin: 0em 1em; font-size: 0.7em" type="email" placeholder="Enter your email here">
+           
        
-   
-
-
-    <label   for="number">Phone no.:</label>
+    
+    
+        <label   for="number">Phone no.:</label>
+        <br>
+        <input style=" width: 280px; height: 30px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="number" placeholder="Enter your number here">
+    
+    
+        </div>
+          
+        <div>
+            <p>Services you are interested in </p>
+            
+           <p> Candid wedding photography
     <br>
-    <input style=" width: 280px; height: 30px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="number" placeholder="Enter your number here">
-
-
-    </div>
+    Candid cinematography
+    <br>
+    Pre wedding shoot/Couple shoot
+    
+    Photo books and albums
+    <br>
+    Photo books and albums
+    </p>
+        </div>
+    
+        <label for="text">Any message for us:</label>
+        <input style=" width: 380px; height: 150px; padding: 0% 1%; margin: 0em 1em; font-size: 0.7em" type="text">
+            
+       <p>You can mention any special requirements, eg. on 10th Dec I want candid photography + traditional videography, on 11th Dec I want candid photography and candid cinematography.</p>
+       <br>
       
-    <div>
-        <p>Services you are interested in </p>
+       <input style=" width: 280px; height: 40px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="text" placeholder="i am human">
+    <br>
+       <button style="height: 40px; width: 60px; margin-top: 5%; ">Submit</button>
+    </form> 
+    </div>
+    </div>
+    
+    
+    
+    <!-- cards -->
+    <div style="display:flex; margin-top: 120px;">
+    
+    <div style="height: 230px; width: 400px; border: 1px;   padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8; ">
+        <h2>How big is your team?</h2>
         
-       <p> Candid wedding photography
-<br>
-Candid cinematography
-<br>
-Pre wedding shoot/Couple shoot
-
-Photo books and albums
-<br>
-Photo books and albums
-</p>
+       <p> Our core team consists of 22 members. We have Neha and Pranjal as our founders and the leads. For every 
+        shoot, our team is pre decided and gets fixed as soon as we block the dates for you (upon receiving the advance payment).</p>
+    
     </div>
-
-    <label for="text">Any message for us:</label>
-    <input style=" width: 380px; height: 150px; padding: 0% 1%; margin: 0em 1em; font-size: 0.7em" type="text">
+    <br>
+    <div style="height: 200px; width: 380px; border: 1px; padding: 4%; font-size: 1.20em; margin-left: 10%; margin-bottom:-5px;  background-color:#9b6a50; color: #f3e5d8;">
+        <h2 >HOW LONG HAVE YOU BEEN CAPTURING WEDDINGS?</h2>
         
-   <p>You can mention any special requirements, eg. on 10th Dec I want candid photography + traditional videography, on 11th Dec I want candid photography and candid cinematography.</p>
-   <br>
-  
-   <input style=" width: 280px; height: 40px; padding: 0% 1%; font-size: 0.7em; margin: 0em 1em;" type="text" placeholder="i am human">
-<br>
-   <button style="height: 40px; width: 60px; margin-top: 5%; ">Submit</button>
-</form> 
-</div>
-</div>
-
-
-
-<!-- cards -->
-<div style="display:flex; margin-top: 120px;">
-
-<div style="height: 230px; width: 400px; border: 1px;   padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8; ">
-    <h2>How big is your team?</h2>
+        <p>We shot our first wedding in the October of 2012 in Pune, India and since then a journey has started. A journey which has taken us across India and rest of the world. </p>
+    </div>
+    </div>
+    <br>
     
-   <p> Our core team consists of 22 members. We have Neha and Pranjal as our founders and the leads. For every 
-    shoot, our team is pre decided and gets fixed as soon as we block the dates for you (upon receiving the advance payment).</p>
-
-</div>
-<br>
-<div style="height: 200px; width: 380px; border: 1px; padding: 4%; font-size: 1.20em; margin-left: 10%; margin-bottom:-5px;  background-color:#9b6a50; color: #f3e5d8;">
-    <h2 >HOW LONG HAVE YOU BEEN CAPTURING WEDDINGS?</h2>
+    <div style="display: flex; margin-top: 30px;">
+    <div style="height: 450px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%;  background-color:#9b6a50; color: #f3e5d8;">
+        <h2>WHICH CAMERAS/EQUIPMENT DO YOU USE?</h2>
+        <p>We use Sony A7S III, Sony A7 III/IV, Canon R5/R6 (mark I and II), 1DX II etc. throughout for candid photography as well as cinematography.</p>
+        <p>Apart from that we use zhiyun crane 2 gimbals, ronin mx gimbals, glide cams, cine sliders, fig rigs, go pros, dji mavic pro 2 drones, wireless radio triggers, filters, studio lights, AD 200 pro and of course the best in class lenses such as 14 mm f/2.8, 16-35 mm f/2.8, 24-70 mm f/2.8, 70-200 mm f/2.8 IS, 100 mm f/2.8 macro, 24 mm f/1.4, 50 mm f/1.4, 35 mm f/1.4, 24-105 f/4L IS among others.
     
-    <p>We shot our first wedding in the October of 2012 in Pune, India and since then a journey has started. A journey which has taken us across India and rest of the world. </p>
-</div>
-</div>
-<br>
-
-<div style="display: flex; margin-top: 30px;">
-<div style="height: 450px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%;  background-color:#9b6a50; color: #f3e5d8;">
-    <h2>WHICH CAMERAS/EQUIPMENT DO YOU USE?</h2>
-    <p>We use Sony A7S III, Sony A7 III/IV, Canon R5/R6 (mark I and II), 1DX II etc. throughout for candid photography as well as cinematography.</p>
-    <p>Apart from that we use zhiyun crane 2 gimbals, ronin mx gimbals, glide cams, cine sliders, fig rigs, go pros, dji mavic pro 2 drones, wireless radio triggers, filters, studio lights, AD 200 pro and of course the best in class lenses such as 14 mm f/2.8, 16-35 mm f/2.8, 24-70 mm f/2.8, 70-200 mm f/2.8 IS, 100 mm f/2.8 macro, 24 mm f/1.4, 50 mm f/1.4, 35 mm f/1.4, 24-105 f/4L IS among others.
-
-        But an old saying remains true, its the photographer, not the camera.</p>
-</div>
-
-<div style="height: 450px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%;  background-color:#9b6a50; color: #f3e5d8;">
-    <h2>HOW MUCH DO YOU CHARGE?</h2>
-    <p>Our rates are totally flexible and depend on your photography requirements.
-        <br>
-        We charge by day basis. However,  just to give you some idea, the rates starting at Rs 85 000 vary according to the number of photographers you need, the kind of work you desire, duration of your event and the number of teams required. The cinematography service charges start at Rs 100 000. GST is 18% over and above our shoot charges.
-        <br>
-        At any point, it would be best to give us a call and share your questions as the charges cannot be shared upfront here without us knowing your requirements, the duration of the events, number of guests, lights and of course travel if any. We would be glad to help you.</p>
-</div>
-</div>
-
-<br>
-<div style="display: flex; margin-top: 30px;">
-    <div style="height: 460px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8; ">
-        <h2>HOW MUCH ADVANCE DO I NEED TO PAY AND HOW AND WHAT IS YOUR CANCELLATION POLICY, IF ANY?</h2>
-        <p>50% of the amount is payable when you book us. The remaining balance is payable on the day of shoot.
+            But an old saying remains true, its the photographer, not the camera.</p>
+    </div>
+    
+    <div style="height: 450px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%;  background-color:#9b6a50; color: #f3e5d8;">
+        <h2>HOW MUCH DO YOU CHARGE?</h2>
+        <p>Our rates are totally flexible and depend on your photography requirements.
             <br>
-            Please note that we will start editing your data only when we have realised 100% payment. The timeline given to you will therefore get extended if there is a delay in payment.
+            We charge by day basis. However,  just to give you some idea, the rates starting at Rs 85 000 vary according to the number of photographers you need, the kind of work you desire, duration of your event and the number of teams required. The cinematography service charges start at Rs 100 000. GST is 18% over and above our shoot charges.
             <br>
-            In our company’s history we have never come across a case where cancellations have happened. However, incase they do; we demand 100% payment as we would have blocked the crew and equipment for those dates and hence its a complete loss for us.</p>
+            At any point, it would be best to give us a call and share your questions as the charges cannot be shared upfront here without us knowing your requirements, the duration of the events, number of guests, lights and of course travel if any. We would be glad to help you.</p>
+    </div>
+    </div>
+    
+    <br>
+    <div style="display: flex; margin-top: 30px;">
+        <div style="height: 460px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8; ">
+            <h2>HOW MUCH ADVANCE DO I NEED TO PAY AND HOW AND WHAT IS YOUR CANCELLATION POLICY, IF ANY?</h2>
+            <p>50% of the amount is payable when you book us. The remaining balance is payable on the day of shoot.
+                <br>
+                Please note that we will start editing your data only when we have realised 100% payment. The timeline given to you will therefore get extended if there is a delay in payment.
+                <br>
+                In our company’s history we have never come across a case where cancellations have happened. However, incase they do; we demand 100% payment as we would have blocked the crew and equipment for those dates and hence its a complete loss for us.</p>
+        </div>
+    
+        <div style="height: 460px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8;">
+            <h2>WHAT IS YOUR TRAVEL/ACCOMMODATION
+                <br>
+                & FOOD POLICY?</h2>
+            <p>For locations outside Delhi NCR and Mumbai, air travel, local travel in your city, local stay and food arrangements for the crew are required. The quote that we share with you does not include travel/stay/food component (TBL is over and above our shoot charges).
+                <br>
+                Please note that at times we may need local travel and stay even for locations within Delhi NCR and Mumbai if your event locations are far from our offices. Food for the whole crew during the course of the shoot is required in all the shoots which we do irrespective of the location of the shoot (i.e. within Delhi NCR, Mumbai or outside these regions).</p>
+        </div>
+    </div>
+    
+    
+    </div>
+     
+    
+    <div style="height: 90px; width:1200px; background-color: #f3e5d8; margin-right: 7%; padding-left: 5%; padding: 4%; margin-top: 2%; margin-left: 40px;"> <h1 style="margin-left: 395px; color:#9b6a50;">HAVE MORE QUESTIONS?</h1>
+    
+        
+       <a style="margin-left: 365px; color: black;" href="#">For detailed FAQs Please visit our FAQs page. Click here to get redirected </a>
+    </div>
+        
+    
+    
     </div>
 
-    <div style="height: 460px; width: 400px; border: 1px;  padding: 3%; font-size: 1.20em; margin-left: 10%; background-color:#9b6a50; color: #f3e5d8;">
-        <h2>WHAT IS YOUR TRAVEL/ACCOMMODATION
-            <br>
-            & FOOD POLICY?</h2>
-        <p>For locations outside Delhi NCR and Mumbai, air travel, local travel in your city, local stay and food arrangements for the crew are required. The quote that we share with you does not include travel/stay/food component (TBL is over and above our shoot charges).
-            <br>
-            Please note that at times we may need local travel and stay even for locations within Delhi NCR and Mumbai if your event locations are far from our offices. Food for the whole crew during the course of the shoot is required in all the shoots which we do irrespective of the location of the shoot (i.e. within Delhi NCR, Mumbai or outside these regions).</p>
-    </div>
-</div>
-
-
-</div>
- 
-
-<div style="height: 90px; width:1200px; background-color: #f3e5d8; margin-right: 7%; padding-left: 5%; padding: 4%; margin-top: 2%; margin-left: 40px;"> <h1 style="margin-left: 395px; color:#9b6a50;">HAVE MORE QUESTIONS?</h1>
-
-    
-   <a style="margin-left: 365px; color: black;" href="#">For detailed FAQs Please visit our FAQs page. Click here to get redirected </a>
-</div>
-    
-
-
-</body>
-</html>
+{% endblock content %}

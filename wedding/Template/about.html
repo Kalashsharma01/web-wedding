@@ -1,41 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wedding-website</title>
-</head>
-<body>
-    <div style="display: flex;">
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+
+
+<div style="background-image: url('/static/image/wedtwo.png'); height: 46.5em; width: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover; margin-top: -10em;">
+    <h1 style="font-size: 5em; color: white; font-weight: bold; text-align: center; padding-top: 4.5em;">ABOUT US</h1>
+</div>
+
+
+<div style="display: flex;">
        
-  <div style="display: flex;">
-    <img style="height: 700; width: 700px; padding: 80px; padding-top: 200px;" src="https://www.candidshutters.com/maintenance/wp-content/uploads/2020/10/h1-image-5.jpg" alt="photo">
-</div>
-   
-    <div style="height: 900; width: 400px; padding-top: 160px; font-size:1.40em;">
-    <h1>A decade old credible brand with presence in Mumbai and Delhi NCR!</h1>
+    <div style="display: flex;">
+      <img style="height: 700; width: 700px; padding: 80px; padding-top: 200px;" src="https://www.candidshutters.com/maintenance/wp-content/uploads/2020/10/h1-image-5.jpg" alt="photo">
+  </div>
+     
+      <div style="height: 900; width: 25em; padding-top: 11em; font-size:1.1em;">
+      <h1>A decade old credible brand with presence in Mumbai and Delhi NCR!</h1>
+  
+      <p>Established in 2012, the journey of CandidShutters began as a young soul’s yearning to share and showcase the emotional happy stories of love, camaraderie, and celebration.
+          <br>
+          CandidShutters was started by Pranjal Kumar, an engineering graduate from BITS Pilani Goa and an MBA from NMIMS, Mumbai, whose love for cinema and passion for technology made him bid goodbye to plush jobs in the corporate and chart out his own path leading to creative satisfaction and realisation.
+          <br>
+          In his soul satiating journey, he was joined in 2019 by Neha Talwar, an Economics graduate from Delhi University and an MBA from NMIMS, Mumbai, who helped streamline the creative growth process at CandidShutters and helped it in diversifying further into related industries.
+          <br>
+          What fascinates them about weddings is the tremendous power they wield into pulling an entire clan together and offer a perfect platform to experience myriad of emotions under one roof. There is nothing more creatively stimulating and satisfying than that.
+          <br>
+          Together they work as a team with their passionate crew of photographers, cinematographers, editors, and designers on a relentless mission of turning their clients’ vision into a living reality.</p>
+      </div>
+  </div>
+  
+      <div style="height: 500px; width: 1420; background-color: rgb(247, 156, 255); padding: 3em; margin-top: 5em;">
+          <p  style="font-size:1.4em; font-weight:600;">Taking the customer delight experience further and leaving an impact on many facets of their lives, both personal and professional, they have forayed into inter-related fields establishing CandidShutters as an all-encompassing brand for visual media.</p>
+  
+          <p style="padding:3%; font-size:1.2em;">Through CandidShutters Media, they aim to offer tailor made professional creative solutions to businesses. Its wide range of corporate portfolio (for big industry brands as well as new emerging start-ups) includes covering conferences and seminars, exhibitions, award ceremonies, product launches, corporate training and incentive programs, team engagement travels, public relation events, brand documentaries and films, content creation and state of the art functional brand websites.
+              <br>
+              <br>
+              Striking a perfect balance between digital data as well as a meaningful tangible output, they also offer custom designed, made to order photo books and prints through CandidShutters Store. This design and print focussed vertical caters to a wide spectrum of clients from weddings, birthdays and events, travel, baby, personal moments, milestone events, illustrated photo books and much more. A seamless integration of human interaction and technology, CandidShutters Store with its gamut of products and service offerings powered by the state of the art technology and AI, is working to change the industry dynamics and revolutionise the art of making and savouring photo books.</p>
+  
+      </div>
+  
 
-    <p>Established in 2012, the journey of CandidShutters began as a young soul’s yearning to share and showcase the emotional happy stories of love, camaraderie, and celebration.
-        <br>
-        CandidShutters was started by Pranjal Kumar, an engineering graduate from BITS Pilani Goa and an MBA from NMIMS, Mumbai, whose love for cinema and passion for technology made him bid goodbye to plush jobs in the corporate and chart out his own path leading to creative satisfaction and realisation.
-        <br>
-        In his soul satiating journey, he was joined in 2019 by Neha Talwar, an Economics graduate from Delhi University and an MBA from NMIMS, Mumbai, who helped streamline the creative growth process at CandidShutters and helped it in diversifying further into related industries.
-        <br>
-        What fascinates them about weddings is the tremendous power they wield into pulling an entire clan together and offer a perfect platform to experience myriad of emotions under one roof. There is nothing more creatively stimulating and satisfying than that.
-        <br>
-        Together they work as a team with their passionate crew of photographers, cinematographers, editors, and designers on a relentless mission of turning their clients’ vision into a living reality.</p>
-    </div>
-</div>
-
-    <div style="height: 500px; width: 1420; background-color: rgb(247, 156, 255); padding: 30px;">
-        <p  style="font-size:1.70em; font-weight:600;">Taking the customer delight experience further and leaving an impact on many facets of their lives, both personal and professional, they have forayed into inter-related fields establishing CandidShutters as an all-encompassing brand for visual media.</p>
-
-        <p style="padding:3%; font-size:1.50em;">Through CandidShutters Media, they aim to offer tailor made professional creative solutions to businesses. Its wide range of corporate portfolio (for big industry brands as well as new emerging start-ups) includes covering conferences and seminars, exhibitions, award ceremonies, product launches, corporate training and incentive programs, team engagement travels, public relation events, brand documentaries and films, content creation and state of the art functional brand websites.
-            <br>
-            <br>
-            Striking a perfect balance between digital data as well as a meaningful tangible output, they also offer custom designed, made to order photo books and prints through CandidShutters Store. This design and print focussed vertical caters to a wide spectrum of clients from weddings, birthdays and events, travel, baby, personal moments, milestone events, illustrated photo books and much more. A seamless integration of human interaction and technology, CandidShutters Store with its gamut of products and service offerings powered by the state of the art technology and AI, is working to change the industry dynamics and revolutionise the art of making and savouring photo books.</p>
-
-    </div>
-   
-</body>
-</html>
+{% endblock content %}

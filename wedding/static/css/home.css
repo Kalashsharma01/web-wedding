@@ -3,7 +3,7 @@
 
 
 .home-header{
-    background-image: url('https://www.candidshutters.com/maintenance/wp-content/uploads/2022/10/wedding-pictures-in-india-pre-wedding-photography-gulmarg-kashmir.jpg');
+    background-image: url('/wedding/static/image/wedtwo.png');
     height: 47em;
     width: 100%;
     background-position: center center;
@@ -124,3 +124,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
+
+

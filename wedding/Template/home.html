@@ -2,7 +2,31 @@
 
 {% block content %}
 
-<link rel="stylesheet" href="/static/css/home.css"> 
+<style>
+    
+.home_body{
+    width: 94.95em;
+    overflow: hidden;
+}
+
+.home_heading{
+    font-size: 9.6em;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    animation: move 10s ease-out forwards;
+    width: 94.5em;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(10vw); 
+    }
+}
+
+</style>
 
     
 
@@ -19,8 +43,8 @@
 
 
 
-        <div class="home-header">
-            <h1 style="font-size: 2em; color: white; font-weight: bold; margin-left: 2em; padding-top: 11em; width: 15em; text-transform: uppercase;"> <span style="font-size: 0.7em; margin-right: 2em;">Consistently ranked amongst</span>
+        <div style="background-image: url('/static/image/wedtwo.png'); height: 45em; width: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover; margin-top: -10em;">
+            <h1 style="font-size: 2em; color: white; font-weight: bold; margin-left: 2em; padding-top: 10em; width: 15em; text-transform: uppercase;"> <span style="font-size: 0.7em; margin-right: 2em;">Consistently ranked amongst</span>
                 the best wedding photographers in India since 2012.</h1>
 
             <p style="color: white; margin-left: 4em; margin-top: 1.5em; width: 30em; font-weight: bold;">

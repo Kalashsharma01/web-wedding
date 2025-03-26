@@ -1,48 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wedding-website</title>
-    <style>
-        
-        .portfolio-header{
-            background-image: url('https://www.candidshutters.com/maintenance/wp-content/uploads/2022/10/wedding-pictures-in-india-pre-wedding-photography-gulmarg-kashmir.jpg');
-            height: 37em;
-            width: 1430px;
-            background-position: center center;
-            background-repeat: repeat;
-            background-size: cover;
-        }
-        .marquee {
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-        width: 1430px;
-        background-color: black;
-    }
+{% extends 'index.html' %}
 
-    .marquee span {
-        display: inline-block;
-        font-size: 12em;
-        color: rgb(218, 218, 218);
-        animation: marquee 10s linear infinite;
-    }
 
-    @keyframes marquee {
-        from { transform: translateX(100%); }
-        to { transform: translateX(-100%); }
-    }
-    </style>
-</head>
-<body style="background-color:  #f8f5f1;">
+{% block content %}
+
+
+
+<style>
+   
+    .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 1430px;
+    background-color: black;
+}
+
+.marquee span {
+    display: inline-block;
+    font-size: 12em;
+    color: rgb(218, 218, 218);
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+</style>
+
+
+
+<div style="background-color:  #f8f5f1;">
 
     
 
     <div style="margin: 0; padding: 0; width: 1430px; ">
 
-        <div class="portfolio-header">
-            <h1 style="font-size: 5em; color: white; font-weight: bold; text-align: center; padding-top: 3em; margin: 0; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">WEDDING CINEMA</h1>
+        <div style="background-image: url('/static/image/wedtwo.png'); height: 46.5em; width: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover; margin-top: -10em;">
+            <h1 style="font-size: 5em; color: white; font-weight: bold; text-align: center; padding-top: 4.5em;">WEDDING CINEMA</h1>
         </div>
 
 
@@ -249,5 +244,6 @@
 </div>
 
     
-</body>
-</html>
+</div>
+
+{% endblock content %}
