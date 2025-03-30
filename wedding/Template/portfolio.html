@@ -7,25 +7,28 @@
 
 <style>
    
-    .marquee {
+   .home_body{
+    width: 94.95em;
     overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 1430px;
-    background-color: black;
 }
 
-.marquee span {
-    display: inline-block;
-    font-size: 12em;
-    color: rgb(218, 218, 218);
-    animation: marquee 10s linear infinite;
+.home_heading{
+    font-size: 9.2em;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    animation: move 10s ease-out forwards;
+    width: 94.5em;
 }
 
-@keyframes marquee {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+@keyframes move {
+    from{
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(10vw); 
+    }
 }
+
 </style>
 
 
@@ -41,8 +44,12 @@
         </div>
 
 
+        <div class="home_body">
+            <div class="home_heading">PORTFOLIO</div>
+        </div>
+
+
         <div>
-            <marquee direction="left" style="font-size: 12em; color: rgb(235, 235, 235); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >PORTFOLIO</marquee>
 
             <div style=" display: flex; top: 7.5em; margin-left: 10px">
                 <div style="width: 18em;  font-weight: 500; margin-left: 10px;">
