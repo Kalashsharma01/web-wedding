@@ -26,6 +26,19 @@
     }
 }
 
+
+.hover-effect {
+    height: 250px;
+    width: 370px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    height: 300px;
+    width: 400px;
+}
+
 </style>
 
     
@@ -80,7 +93,12 @@
 
  <div style="display: flex; justify-content: space-between; margin-left: 5%; margin-right: 5%; margin-top: 5%;">
 
-<img style="height: 250px; width: 370px;" src="/static/image/wedone.png" alt="">
+    <div style="width: 350px; display: inline-block; height: 250px; overflow: hidden; ">
+        <img src="/static/image/wedone.png" alt=""
+            style="height: 250px; width: 370px; transition: all 0.3s ease-in-out;"
+            onmouseover="this.style.width='420px'; this.style.height='300px';"
+            onmouseout="this.style.height='250px'; this.style.width='370px';">
+    </div>
 
 <img style="height: 250px; width: 370px;" src="/static/image/wedtwo.png" alt="">
 
